@@ -7,20 +7,27 @@
     tools:context="com.photoapp.pianomar.myjcodec.MainActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:id="@+id/textView" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:layout_width="94dp"
-        android:layout_height="79dp"
-        android:src="@android:drawable/stat_sys_warning"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"/>
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3">
+
+        </GridLayout>
+    </ScrollView>
+
 
 </RelativeLayout>
